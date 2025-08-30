@@ -58,3 +58,4 @@ F:\Projetos\ManagerTools\PainelManager\obj\Debug\net8.0-windows\refint\PainelMan
 F:\Projetos\ManagerTools\PainelManager\obj\Debug\net8.0-windows\PainelManager.pdb
 F:\Projetos\ManagerTools\PainelManager\obj\Debug\net8.0-windows\PainelManager.genruntimeconfig.cache
 F:\Projetos\ManagerTools\PainelManager\obj\Debug\net8.0-windows\ref\PainelManager.dll
+F:\Projetos\ManagerTools\PainelManager\obj\Debug\net8.0-windows\PainelManager.sourcelink.json
