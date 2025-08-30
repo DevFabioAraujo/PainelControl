@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs [Projeto]",
+              "Title": "Form1.cs [Design]",
               "DocumentMoniker": "F:\\Projetos\\ManagerTools\\PainelManager\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "F:\\Projetos\\ManagerTools\\PainelManager\\Form1.cs [Projeto]",
-              "RelativeToolTip": "Form1.cs [Projeto]",
+              "ToolTip": "F:\\Projetos\\ManagerTools\\PainelManager\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-29T23:26:15.783Z",
-              "EditorCaption": " [Projeto]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "F:\\Projetos\\ManagerTools\\PainelManager\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-29T23:30:39.58Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "F:\\Projetos\\ManagerTools\\PainelManager\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-30T00:10:26.171Z",
               "EditorCaption": ""

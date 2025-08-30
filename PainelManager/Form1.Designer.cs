@@ -1,51 +1,4 @@
-﻿//namespace PainelManager
-//{
-//    partial class Form1
-//    {
-
-//        private System.ComponentModel.IContainer components = null;
-
-//        protected override void Dispose( bool disposing )
-//        {
-//            if (disposing && ( components != null ))
-
-//                components.Dispose( );
-
-//            base.Dispose( disposing );
-//        }
-
-//        #region Windows Form Designer generated code
-
-
-//        private void InitializeComponent()
-//        {
-//            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager( typeof( Form1 ) );
-//            flowLayoutPanel1 = new FlowLayoutPanel( );
-//            SuspendLayout( );
-//            // 
-//            // flowLayoutPanel1
-//            // 
-//            flowLayoutPanel1.Dock = DockStyle.Fill;
-//            flowLayoutPanel1.Location = new Point( 0, 0 );
-//            flowLayoutPanel1.Name = "flowLayoutPanel1";
-//            flowLayoutPanel1.Size = new Size( 1543, 554 );
-//            flowLayoutPanel1.TabIndex = 0;
-//            // 
-//            // Form1
-//            // 
-//            ClientSize = new Size( 1543, 554 );
-//            Controls.Add( flowLayoutPanel1 );
-//            Icon = ( Icon ) resources.GetObject( "$this.Icon" );
-//            Name = "Form1";
-//            Text = "Troubleshoot";       
-//            ResumeLayout( false );
-
-//        }
-//        #endregion
-//        private FlowLayoutPanel flowLayoutPanel1;
-//    }
-//}
-
+﻿using System.Windows.Forms.VisualStyles;
 
 namespace PainelManager
 {
@@ -69,13 +22,19 @@ namespace PainelManager
             this.tabTERM = new TabPage( );
             this.tabNETBOOT = new TabPage( );
             this.tabCONFIG = new TabPage( );
+            this.tabESQELETRICO = new TabPage( );
+
             this.flowTERM = new FlowLayoutPanel( );
             this.flowNETBOOT = new FlowLayoutPanel( );
             this.flowCONFIG = new FlowLayoutPanel( );
+            this.flowESQELETRICO= new FlowLayoutPanel( );
+            
+
             this.tabControl1.SuspendLayout( );
             this.tabTERM.SuspendLayout( );
             this.tabNETBOOT.SuspendLayout( );
             this.tabCONFIG.SuspendLayout( );
+            this.tabESQELETRICO.SuspendLayout( );
             this.SuspendLayout( );
             // 
             // tabControl1
@@ -83,6 +42,7 @@ namespace PainelManager
             this.tabControl1.Controls.Add( this.tabTERM );
             this.tabControl1.Controls.Add( this.tabNETBOOT );
             this.tabControl1.Controls.Add( this.tabCONFIG );
+            this.tabControl1.Controls.Add( this.tabESQELETRICO );
             this.tabControl1.Dock = DockStyle.Fill;
             this.tabControl1.Location = new Point( 0, 0 );
             this.tabControl1.Name = "tabControl1";
@@ -160,6 +120,29 @@ namespace PainelManager
             this.tabCONFIG.ResumeLayout( false );
             this.ResumeLayout( false );
 
+            // ...
+            // tabESQELETRICO
+            // 
+            this.tabESQELETRICO.Controls.Add( this.flowESQELETRICO );
+            this.tabESQELETRICO.Location = new Point( 4, 24 );
+            this.tabESQELETRICO.Name = "tabESQELETRICO";
+            this.tabESQELETRICO.Padding = new Padding( 3 );
+            this.tabESQELETRICO.Size = new Size( 1535, 526 );
+            this.tabESQELETRICO.TabIndex = 3;
+            this.tabESQELETRICO.Text = "ESQ ELETRICO";
+            this.tabESQELETRICO.UseVisualStyleBackColor = true;
+            // 
+            // flowESQELETRICO
+            // 
+            this.flowESQELETRICO.Dock = DockStyle.Fill;
+            this.flowESQELETRICO.Location = new Point( 3, 3 );
+            this.flowESQELETRICO.Name = "flowESQELETRICO";
+            this.flowESQELETRICO.Size = new Size( 1529, 520 );
+            this.flowESQELETRICO.TabIndex = 0;
+
+
+
+
         }
 
         #endregion
@@ -168,8 +151,10 @@ namespace PainelManager
         private TabPage tabTERM;
         private TabPage tabNETBOOT;
         private TabPage tabCONFIG;
+        private TabPage tabESQELETRICO;
         private FlowLayoutPanel flowTERM;
         private FlowLayoutPanel flowNETBOOT;
         private FlowLayoutPanel flowCONFIG;
+        private FlowLayoutPanel flowESQELETRICO;
     }
 }

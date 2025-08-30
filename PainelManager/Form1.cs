@@ -13,6 +13,7 @@ namespace PainelManager
         private readonly string dirTERM = @"C:\Programas\TERM\";
         private readonly string dirNETBOOT = @"C:\Programas\NETBOOT";
         private readonly string dirCONFIG = @"C:\Programas\CONFIG";
+        private readonly string dirESQUEMAELETRICOS = @"C:\Programas\ESQELETRICO";
 
         public Form1()
         {
@@ -30,6 +31,7 @@ namespace PainelManager
             CarregarExecutaveis( dirTERM, flowTERM );
             CarregarExecutaveis( dirNETBOOT, flowNETBOOT );
             CarregarExecutaveis( dirCONFIG, flowCONFIG );
+            CarregarExecutaveis( dirESQUEMAELETRICOS, flowESQELETRICO );
         }
 
                 private void CarregarExecutaveis( string diretorio, FlowLayoutPanel painel )
@@ -37,7 +39,7 @@ namespace PainelManager
                     if (!Directory.Exists( diretorio )) return;
 
                         //.exe e .lnk
-                        string [ ]arquivos = Directory.GetFiles( diretorio,"*.*").Where(f=>f.EndsWith(".exe")||f.EndsWith(".lnk")).ToArray();
+                        string [ ]arquivos = Directory.GetFiles( diretorio,"*.*").Where(f=>f.EndsWith(".exe")||f.EndsWith(".lnk")||f.EndsWith(".pdf")).ToArray();
 
                         foreach (var arquivo in arquivos) 
                         {
@@ -46,8 +48,28 @@ namespace PainelManager
                                 Text = Path.GetFileNameWithoutExtension( arquivo ),
                                 Width = 200,
                                 Height = 150,
-                                Tag = arquivo
+                                Tag = arquivo,
+                                TextAlign = ContentAlignment.BottomCenter,//TextoAbaixo
+                                ImageAlign = ContentAlignment.TopCenter,//Icone em cima
                             };
+                            //tentar extrair o icone do arquivo
+                            try
+                            {
+                                if (File.Exists( arquivo ))
+                                {
+                                    Icon icone = Icon.ExtractAssociatedIcon( arquivo );
+
+                                    if( icone == null)
+                                    {
+                                        btn.Image = icone.ToBitmap( );
+                                    }
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show( $"Erro ao executar:{ex.Message}" );
+                            }
+
                             btn.Click += ExecutarPrograma;
                             painel.Controls.Add( btn );
 

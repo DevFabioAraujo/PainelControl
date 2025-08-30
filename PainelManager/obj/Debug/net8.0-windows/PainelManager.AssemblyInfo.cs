@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PainelManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+970968007498d0ef058dd5bcc2a63a6f0a064838")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3667d712bb63df9bc8760a6338d8fff9f57bab18")]
 [assembly: System.Reflection.AssemblyProductAttribute("PainelManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PainelManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
