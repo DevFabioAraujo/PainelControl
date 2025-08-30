@@ -18,6 +18,7 @@ namespace PainelManager
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager( typeof( Form1 ) );
+
             this.tabControl1 = new TabControl( );
             this.tabTERM = new TabPage( );
             this.tabNETBOOT = new TabPage( );
@@ -26,9 +27,8 @@ namespace PainelManager
 
             this.flowTERM = new FlowLayoutPanel( );
             this.flowNETBOOT = new FlowLayoutPanel( );
-            this.flowESQELETRICO= new FlowLayoutPanel( );
+            this.flowESQELETRICO = new FlowLayoutPanel( );
             this.flowCONFIG = new FlowLayoutPanel( );
-            
 
             this.tabControl1.SuspendLayout( );
             this.tabTERM.SuspendLayout( );
@@ -36,6 +36,7 @@ namespace PainelManager
             this.tabESQELETRICO.SuspendLayout( );
             this.tabCONFIG.SuspendLayout( );
             this.SuspendLayout( );
+
             // 
             // tabControl1
             // 
@@ -44,106 +45,110 @@ namespace PainelManager
             this.tabControl1.Controls.Add( this.tabESQELETRICO );
             this.tabControl1.Controls.Add( this.tabCONFIG );
             this.tabControl1.Dock = DockStyle.Fill;
-            this.tabControl1.Location = new Point( 0, 0 );
+            this.tabControl1.Location = new System.Drawing.Point( 0, 0 );
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new Size( 1543, 554 );
+            this.tabControl1.Size = new System.Drawing.Size( 1543, 554 );
             this.tabControl1.TabIndex = 0;
+
             // 
             // tabTERM
             // 
             this.tabTERM.Controls.Add( this.flowTERM );
-            this.tabTERM.Location = new Point( 4, 24 );
+            this.tabTERM.Location = new System.Drawing.Point( 4, 24 );
             this.tabTERM.Name = "tabTERM";
             this.tabTERM.Padding = new Padding( 3 );
-            this.tabTERM.Size = new Size( 1535, 526 );
+            this.tabTERM.Size = new System.Drawing.Size( 1535, 526 );
             this.tabTERM.TabIndex = 0;
             this.tabTERM.Text = "TERM";
             this.tabTERM.UseVisualStyleBackColor = true;
+
             // 
             // flowTERM
             // 
             this.flowTERM.Dock = DockStyle.Fill;
-            this.flowTERM.Location = new Point( 3, 3 );
+            this.flowTERM.Location = new System.Drawing.Point( 3, 3 );
             this.flowTERM.Name = "flowTERM";
-            this.flowTERM.Size = new Size( 1529, 520 );
+            this.flowTERM.Size = new System.Drawing.Size( 1529, 520 );
             this.flowTERM.TabIndex = 0;
+
             // 
             // tabNETBOOT
             // 
             this.tabNETBOOT.Controls.Add( this.flowNETBOOT );
-            this.tabNETBOOT.Location = new Point( 4, 24 );
+            this.tabNETBOOT.Location = new System.Drawing.Point( 4, 24 );
             this.tabNETBOOT.Name = "tabNETBOOT";
             this.tabNETBOOT.Padding = new Padding( 3 );
-            this.tabNETBOOT.Size = new Size( 1535, 526 );
+            this.tabNETBOOT.Size = new System.Drawing.Size( 1535, 526 );
             this.tabNETBOOT.TabIndex = 1;
             this.tabNETBOOT.Text = "NETBOOT";
             this.tabNETBOOT.UseVisualStyleBackColor = true;
+
             // 
             // flowNETBOOT
             // 
             this.flowNETBOOT.Dock = DockStyle.Fill;
-            this.flowNETBOOT.Location = new Point( 3, 3 );
+            this.flowNETBOOT.Location = new System.Drawing.Point( 3, 3 );
             this.flowNETBOOT.Name = "flowNETBOOT";
-            this.flowNETBOOT.Size = new Size( 1529, 520 );
+            this.flowNETBOOT.Size = new System.Drawing.Size( 1529, 520 );
             this.flowNETBOOT.TabIndex = 0;
 
-            // ...
+            // 
             // tabESQELETRICO
             // 
             this.tabESQELETRICO.Controls.Add( this.flowESQELETRICO );
-            this.tabESQELETRICO.Location = new Point( 4, 24 );
+            this.tabESQELETRICO.Location = new System.Drawing.Point( 4, 24 );
             this.tabESQELETRICO.Name = "tabESQELETRICO";
             this.tabESQELETRICO.Padding = new Padding( 3 );
-            this.tabESQELETRICO.Size = new Size( 1535, 526 );
-            this.tabESQELETRICO.TabIndex = 3;
+            this.tabESQELETRICO.Size = new System.Drawing.Size( 1535, 526 );
+            this.tabESQELETRICO.TabIndex = 2;
             this.tabESQELETRICO.Text = "ESQ ELETRICO";
             this.tabESQELETRICO.UseVisualStyleBackColor = true;
+
             // 
             // flowESQELETRICO
             // 
             this.flowESQELETRICO.Dock = DockStyle.Fill;
-            this.flowESQELETRICO.Location = new Point( 3, 3 );
+            this.flowESQELETRICO.Location = new System.Drawing.Point( 3, 3 );
             this.flowESQELETRICO.Name = "flowESQELETRICO";
-            this.flowESQELETRICO.Size = new Size( 1529, 520 );
+            this.flowESQELETRICO.Size = new System.Drawing.Size( 1529, 520 );
             this.flowESQELETRICO.TabIndex = 0;
-
-
 
             // 
             // tabCONFIG
             // 
             this.tabCONFIG.Controls.Add( this.flowCONFIG );
-            this.tabCONFIG.Location = new Point( 4, 24 );
+            this.tabCONFIG.Location = new System.Drawing.Point( 4, 24 );
             this.tabCONFIG.Name = "tabCONFIG";
             this.tabCONFIG.Padding = new Padding( 3 );
-            this.tabCONFIG.Size = new Size( 1535, 526 );
-            this.tabCONFIG.TabIndex = 2;
+            this.tabCONFIG.Size = new System.Drawing.Size( 1535, 526 );
+            this.tabCONFIG.TabIndex = 3;
             this.tabCONFIG.Text = "CONFIG";
             this.tabCONFIG.UseVisualStyleBackColor = true;
+
             // 
             // flowCONFIG
             // 
             this.flowCONFIG.Dock = DockStyle.Fill;
-            this.flowCONFIG.Location = new Point( 3, 3 );
+            this.flowCONFIG.Location = new System.Drawing.Point( 3, 3 );
             this.flowCONFIG.Name = "flowCONFIG";
-            this.flowCONFIG.Size = new Size( 1529, 520 );
+            this.flowCONFIG.Size = new System.Drawing.Size( 1529, 520 );
             this.flowCONFIG.TabIndex = 0;
 
             // 
             // Form1
             // 
-            this.ClientSize = new Size( 1543, 554 );
+            this.ClientSize = new System.Drawing.Size( 1543, 554 );
             this.Controls.Add( this.tabControl1 );
-            this.Icon = ( Icon ) resources.GetObject( "$this.Icon" );
+            this.Icon = ( System.Drawing.Icon ) resources.GetObject( "$this.Icon" );
             this.Name = "Form1";
             this.Text = "Troubleshoot";
             this.tabControl1.ResumeLayout( false );
             this.tabTERM.ResumeLayout( false );
             this.tabNETBOOT.ResumeLayout( false );
+            this.tabESQELETRICO.ResumeLayout( false );
             this.tabCONFIG.ResumeLayout( false );
             this.ResumeLayout( false );
-        
         }
 
         #endregion
