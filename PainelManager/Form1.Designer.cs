@@ -21,28 +21,28 @@ namespace PainelManager
             this.tabControl1 = new TabControl( );
             this.tabTERM = new TabPage( );
             this.tabNETBOOT = new TabPage( );
-            this.tabCONFIG = new TabPage( );
             this.tabESQELETRICO = new TabPage( );
+            this.tabCONFIG = new TabPage( );
 
             this.flowTERM = new FlowLayoutPanel( );
             this.flowNETBOOT = new FlowLayoutPanel( );
-            this.flowCONFIG = new FlowLayoutPanel( );
             this.flowESQELETRICO= new FlowLayoutPanel( );
+            this.flowCONFIG = new FlowLayoutPanel( );
             
 
             this.tabControl1.SuspendLayout( );
             this.tabTERM.SuspendLayout( );
             this.tabNETBOOT.SuspendLayout( );
-            this.tabCONFIG.SuspendLayout( );
             this.tabESQELETRICO.SuspendLayout( );
+            this.tabCONFIG.SuspendLayout( );
             this.SuspendLayout( );
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add( this.tabTERM );
             this.tabControl1.Controls.Add( this.tabNETBOOT );
-            this.tabControl1.Controls.Add( this.tabCONFIG );
             this.tabControl1.Controls.Add( this.tabESQELETRICO );
+            this.tabControl1.Controls.Add( this.tabCONFIG );
             this.tabControl1.Dock = DockStyle.Fill;
             this.tabControl1.Location = new Point( 0, 0 );
             this.tabControl1.Name = "tabControl1";
@@ -87,38 +87,6 @@ namespace PainelManager
             this.flowNETBOOT.Name = "flowNETBOOT";
             this.flowNETBOOT.Size = new Size( 1529, 520 );
             this.flowNETBOOT.TabIndex = 0;
-            // 
-            // tabCONFIG
-            // 
-            this.tabCONFIG.Controls.Add( this.flowCONFIG );
-            this.tabCONFIG.Location = new Point( 4, 24 );
-            this.tabCONFIG.Name = "tabCONFIG";
-            this.tabCONFIG.Padding = new Padding( 3 );
-            this.tabCONFIG.Size = new Size( 1535, 526 );
-            this.tabCONFIG.TabIndex = 2;
-            this.tabCONFIG.Text = "CONFIG";
-            this.tabCONFIG.UseVisualStyleBackColor = true;
-            // 
-            // flowCONFIG
-            // 
-            this.flowCONFIG.Dock = DockStyle.Fill;
-            this.flowCONFIG.Location = new Point( 3, 3 );
-            this.flowCONFIG.Name = "flowCONFIG";
-            this.flowCONFIG.Size = new Size( 1529, 520 );
-            this.flowCONFIG.TabIndex = 0;
-            // 
-            // Form1
-            // 
-            this.ClientSize = new Size( 1543, 554 );
-            this.Controls.Add( this.tabControl1 );
-            this.Icon = ( Icon ) resources.GetObject( "$this.Icon" );
-            this.Name = "Form1";
-            this.Text = "Troubleshoot";
-            this.tabControl1.ResumeLayout( false );
-            this.tabTERM.ResumeLayout( false );
-            this.tabNETBOOT.ResumeLayout( false );
-            this.tabCONFIG.ResumeLayout( false );
-            this.ResumeLayout( false );
 
             // ...
             // tabESQELETRICO
@@ -142,7 +110,40 @@ namespace PainelManager
 
 
 
+            // 
+            // tabCONFIG
+            // 
+            this.tabCONFIG.Controls.Add( this.flowCONFIG );
+            this.tabCONFIG.Location = new Point( 4, 24 );
+            this.tabCONFIG.Name = "tabCONFIG";
+            this.tabCONFIG.Padding = new Padding( 3 );
+            this.tabCONFIG.Size = new Size( 1535, 526 );
+            this.tabCONFIG.TabIndex = 2;
+            this.tabCONFIG.Text = "CONFIG";
+            this.tabCONFIG.UseVisualStyleBackColor = true;
+            // 
+            // flowCONFIG
+            // 
+            this.flowCONFIG.Dock = DockStyle.Fill;
+            this.flowCONFIG.Location = new Point( 3, 3 );
+            this.flowCONFIG.Name = "flowCONFIG";
+            this.flowCONFIG.Size = new Size( 1529, 520 );
+            this.flowCONFIG.TabIndex = 0;
 
+            // 
+            // Form1
+            // 
+            this.ClientSize = new Size( 1543, 554 );
+            this.Controls.Add( this.tabControl1 );
+            this.Icon = ( Icon ) resources.GetObject( "$this.Icon" );
+            this.Name = "Form1";
+            this.Text = "Troubleshoot";
+            this.tabControl1.ResumeLayout( false );
+            this.tabTERM.ResumeLayout( false );
+            this.tabNETBOOT.ResumeLayout( false );
+            this.tabCONFIG.ResumeLayout( false );
+            this.ResumeLayout( false );
+        
         }
 
         #endregion
@@ -150,11 +151,11 @@ namespace PainelManager
         private TabControl tabControl1;
         private TabPage tabTERM;
         private TabPage tabNETBOOT;
-        private TabPage tabCONFIG;
         private TabPage tabESQELETRICO;
+        private TabPage tabCONFIG;
         private FlowLayoutPanel flowTERM;
         private FlowLayoutPanel flowNETBOOT;
-        private FlowLayoutPanel flowCONFIG;
         private FlowLayoutPanel flowESQELETRICO;
+        private FlowLayoutPanel flowCONFIG;
     }
 }
